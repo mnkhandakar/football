@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* ---------------
+common styling
+---------------- */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;  
+}
+header{
+    
+    background-color: #2D25A0;
+    height: 667px;
+    margin-bottom: 70px;
+    border: 1px solid #2D25A0;
+}
+
+/*---------------
+ nav bar styling
+ --------------- */
+.menu-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 42px 150px;
+
+}
+.menu-list ul{
+    display: flex;
+}
+.menu-list ul li{
+    list-style: none;
+    margin-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.login{
+    padding: 10px 24px ;
+    background-color: #E02C6D;
+    transition: all 0.3s ease;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.login:hover{
+    transform: scale(1.3) rotate(360deg);
+}
+/* ----------------
+ Banner Styling 
+ -----------------*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+}
+.banner-title{
+    width: 50%;
+    margin-left: 156px;
+}
+.banner-title, .banner-photo{
+    width: 50%;
+    padding-left: 50px;
+}
+.banner-title .title{
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.watch{
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 24px ;
+    width:120px;
+    transition: all 0.3s ease;
+}
+.watch:hover{
+    transform: rotate(360deg);
+}
+.watch a{
+    text-decoration: none;
+    color: white;
+}
+.banner-photo img{
+    width: 556px;
+    transition: all 0.5s ease-in-out;
+}
+.banner-photo img:hover{
+    transform: scale(0.5) rotateY(360deg) ;
+}
+
+/* --------------------
+Player Section Styling
+---------------------- */
+.players-section{
+    margin-bottom: 165px;
+    display: flex;
+    justify-content: center;
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px; 
+    
+}
+.player-details{
+    width:330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+ }
+ .player-details:hover{
+     transform: scale(1.03);
+ }
+ 
+.player-photo img{
+    width:100%;
+    transition: all 1s ease-in-out;
+}
+.player-details:hover .player-photo img{
+    transform: rotateY(360deg);
+}
+.player-info{
+    width: 300px;
+    height: 154px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.player-info h2{
+    font-size: 28px;
+    font-weight: 700;   
+}
+.player-info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+/* ----------
+Highlight Styling
+------------------ */
+
+.highlight{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+.half-width{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0, 5%;
+}
+
+.half-width .text-area{
+    padding-left: 5%;
+}
+.half-width .text-area h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.half-width .text-area p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+.half-width img{
+    width: 75%;
+    transition: all 0.3s ease-in-out;
+}
+.half-width img:hover{
+    transform: scale(0.5) rotateY(360deg) ;
+}
+
+/*-------------
+    Highlight Video Styling
+----------------- */
+.highlight-title{
+    text-align: center;
+    font-size: 48px;
+}
+.highlight-videos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+/*-----------------
+ Thank You Styling
+ ----------------- */
+.thank{
+    text-align: center;
+    font-size: 35px;
+    animation: thank-text 1s ease-in-out none infinite;
+    margin-bottom: 160px;
+}
+@keyframes thank-text {
+    from {background-color: rgb(97, 233, 7);}
+    to {background-color: rgb(7, 194, 241);}
+}
+
+/* --------------
+Footer Styling
+--------------- */
+footer{
+    text-align: center;
+    font-size: 18px;
+}
+footer img{
+    width: 483.87px;
+}
+.social-logo img{
+    width: 32px;
+    height: 32px;
+}
+
+/* ---------------------
+Responsive Media Queries for mobile 
+----------------------------*/
+
+@media only screen and (max-width:668px) {
+    /* --------------
+    common responsive styling
+    --------------------------*/
+    header{
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+
+        .players-section,.highlight,.highlight-videos{
+            width: 100%;
+            display: flex;
+        }
+        .all-players, .videos {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        /* ----------------------------------
+        head section styling for responsive
+        ------------------------------------ */
+           /* ----------------
+             Banner Styling 
+            -----------------*/
+        .banner{
+            display: grid;
+        }
+        .banner-title{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .banner-photo{
+            width: 100%;
+        }
+        .banner-title .title{
+            color: white;
+            font-size: 30px;
+        }
+
+               
+}
