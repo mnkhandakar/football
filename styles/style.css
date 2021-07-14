@@ -15,40 +15,6 @@ header{
     border: 1px solid #2D25A0;
 }
 
-/*---------------
- nav bar styling
- --------------- */
-.menu-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    margin: 42px 150px;
-
-}
-.menu-list ul{
-    display: flex;
-}
-.menu-list ul li{
-    list-style: none;
-    margin-left: 35px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.login{
-    padding: 10px 24px ;
-    background-color: #E02C6D;
-    transition: all 0.3s ease;
-}
-.login a{
-    text-decoration: none;
-    color: white;
-}
-.login:hover{
-    transform: scale(1.3) rotate(360deg);
-}
 /* ----------------
  Banner Styling 
  -----------------*/
@@ -56,6 +22,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 150px;
     width: 100%;    
 }
 .banner-title{
@@ -237,11 +204,7 @@ Responsive Media Queries for mobile
 @media only screen and (max-width:668px) {
     /* --------------
     common responsive styling
-    --------------------------*/
-    header{
-        height: fit-content;
-        margin-bottom: 50px;
-    }
+    --------------------------*/   
 
         .players-section,.highlight,.highlight-videos{
             width: 100%;
@@ -255,6 +218,10 @@ Responsive Media Queries for mobile
         /* ----------------------------------
         head section styling for responsive
         ------------------------------------ */
+        header{
+            height: fit-content;
+            margin-bottom: 50px;
+        }
            /* ----------------
              Banner Styling 
             -----------------*/
